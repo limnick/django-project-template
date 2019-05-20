@@ -3,6 +3,7 @@ BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )"/.. && pwd )"
 
 BIN_DIR="${BASE_DIR}/bin"
 APP_DIR="${BASE_DIR}/app"
+WEBAPP_DIR="${BASE_DIR}/app/webapp"
 DOCKERFILE_DIR="${BASE_DIR}/dockerfiles"
 
 DJANGO_APP_VER="0.0.1"
