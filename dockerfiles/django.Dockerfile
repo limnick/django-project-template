@@ -15,4 +15,4 @@ EXPOSE 8888
 
 WORKDIR /app
 
-CMD python3 manage.py runserver 0.0.0.0:8888
+CMD python3 manage.py runserver_plus 0.0.0.0:8888
