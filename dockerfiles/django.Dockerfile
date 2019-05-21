@@ -13,4 +13,6 @@ RUN apk add --no-cache --update python3 python3-dev gcc g++\
 ADD app ${APP_DIR}
 EXPOSE 8888
 
-CMD python3 app/manage.py runserver 0.0.0.0:8888
+WORKDIR /app
+
+CMD python3 manage.py runserver 0.0.0.0:8888
