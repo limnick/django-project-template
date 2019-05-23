@@ -8,5 +8,7 @@ ADD app/webapp /app
 
 WORKDIR /app
 
+RUN npm install
+
 # CMD webpack-dev-server --hot --inline --progress --host 0.0.0.0
 CMD npm start

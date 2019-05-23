@@ -4,3 +4,5 @@ source $BASE_DIR/bin/env.sh
 
 docker build -f "$DOCKERFILE_DIR/django.Dockerfile" -t "${DJANGO_IMG_TAG}" "${BASE_DIR}"
 docker build -f "$DOCKERFILE_DIR/webpack.Dockerfile" -t "${WEB_BUILD_IMG_TAG}" "${BASE_DIR}"
+
+docker run -it -v "${WEBAPP_DIR}:/app" -p "$WEB_BUILD_PORT:$WEB_BUILD_PORT" "${WEB_BUILD_IMG_TAG}" npm install
